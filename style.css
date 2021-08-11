@@ -1,0 +1,95 @@
+body {
+    height:98vh;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.5) , white, rgba(0,0,0,0.5));
+}
+
+#mainViewer {
+    
+    width:900px;
+    margin: 0 auto 0 auto;
+    
+}
+
+#mainflex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    /* border: solid 1px black; */
+    box-shadow: rgba(0,0,0,0.5) 0px 7px 5px 2px;
+    position:relative;
+}
+
+#imgPickerR {
+    transform: rotate(180deg);
+}
+
+#text-container {
+    background: rgba(0,0,0,0.5);
+    height:150px;
+    width:800px;
+    position:absolute;
+    bottom:0px;
+    
+}
+
+#title, #desc {
+    color:white;
+    margin-left:20px;
+    margin-right:10px;
+}
+
+#thumbnailbox {
+    height:115px;
+    width:600px;
+    margin: 20px auto 0 auto;
+    display:flex;
+    justify-content: space-between;
+}
+
+.thumbnail{
+    height:110px;
+    width:110px;
+    background-image:linear-gradient(white, rgba(0,0,0,0.5));
+    border-radius: 10px;
+    z-index: 5;
+    position:relative;
+    /* border:solid 1px black; */
+}
+
+.thumbnail img {
+    border-radius:10px;
+    margin: 5px;
+    user-select: none;
+}
+
+/* .activeThumbnail::before {
+    content: a;
+    height:200px;
+    width:200px;
+    background:red;
+    position: absolute;
+    top: -10px;
+} */
+
+.activeThumbnail {
+    border: solid 1px blue;
+}
+
+.thumbTitle {
+    position:absolute;
+    top:-55px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    padding:10px;
+    color:white;
+    display:none;
+}
+
+.thumbnail:hover .thumbTitle{
+    display:block;
+}
